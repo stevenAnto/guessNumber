@@ -37,7 +37,7 @@ function limpiarCajar(){
   valorCaja.value = '';
 }
 function condicionesIniciales(){
-  asignarTextoElemento('h1','Pkña adivina un numero, para que no estes de malas);
+  asignarTextoElemento('h1','Pkña adivina un numero, para que no estes de malas');
   asignarTextoElemento('p','Indica un numero del 1 a 10');
   numeroSecreto = generarNumeroSecreto();
   intentos = 1;
