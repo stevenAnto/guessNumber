@@ -14,17 +14,17 @@ function verificarIntento(){
   let numeroUsuario = parseInt(document.getElementById('numeroInput').value);
   console.log(`el numero de usuario es ${numeroUsuario} y secreo es ${numeroSecreto}`);
   if(numeroUsuario == numeroSecreto){
-    asignarTextoElemento('p',`Acertaste el numero en ${intentos} ${intentos===1? 'vez':'veces'}`)
+    asignarTextoElemento('p',`Que trome, Acertaste el numero en ${intentos} ${intentos===1? 'vez':'veces'}`)
     document.getElementById('reiniciar').removeAttribute('disabled');
   }
   else{
     if(numeroUsuario>numeroSecreto){
-      asignarTextoElemento('p','el numero secreto es menor');
+      asignarTextoElemento('p','el numero secreto es menor pkña');
       console.log("menor");
     }
     else{
       console.log("mauyor");
-      asignarTextoElemento('p','el numero secreto es mayor');
+      asignarTextoElemento('p','el numero secreto es mayor pkña');
     }
     intentos++;
     limpiarCajar();
@@ -37,7 +37,7 @@ function limpiarCajar(){
   valorCaja.value = '';
 }
 function condicionesIniciales(){
-  asignarTextoElemento('h1','Ola k ace');
+  asignarTextoElemento('h1','Pkña adivina un numero, para que no estes de malas);
   asignarTextoElemento('p','Indica un numero del 1 a 10');
   numeroSecreto = generarNumeroSecreto();
   intentos = 1;
